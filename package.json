@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint .",
+    "debug": "node --inspect-brk node_modules\\nightwatch\\bin\\nightwatch",
     "test": "nightwatch"
   },
   "keywords": [],

@@ -13,6 +13,8 @@ module.exports = {
         const resultsPageLanguageSelector = '.KTBKoe';
         // const resultsPageUpdateSelector = '.KTBKoe';
 
+        debugger;
+
         browser
         .url("https://www.google.com/advanced_search")
         .setValue(mainQueryInputSelector, mainQuery)
@@ -20,6 +22,7 @@ module.exports = {
         .click(languageDropdownValueSelector)
         .click(lastUpdateDropdownOpenerSelector)
         .click(lastUpdateDropdownValueSelector)
+        .perform(() => { debugger;} )
         .click(submitButtomSelector)
         .assert.urlContains('as_q=Elon+Musk', 'Params: Query is Elon Musk')
         .assert.urlContains('lr=lang_it', 'Params: Language is Italian')
