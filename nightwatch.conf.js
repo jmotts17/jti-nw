@@ -215,7 +215,6 @@
 //   } catch (err) {}
 // }
 
-// test
 module.exports = {
   'src_folders': ['tests'],
   'page_objects_path': ['page-objects'],
@@ -237,7 +236,7 @@ module.exports = {
           'desiredCapabilities': {
               'browserName': 'chrome',
               'chromeOptions': {
-                  'args': ['--headless']
+                //   'args': ['--headless']
               }
           }
       }
